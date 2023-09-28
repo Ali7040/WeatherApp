@@ -1,2 +1,2 @@
 # WeatherApp
-## app Created in React-Native
+## app Created in React-Native using Expo
