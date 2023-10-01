@@ -7,9 +7,13 @@ const App = () =>{
 
 
   return(
-    <View style={styles.container}>
-      <CurrentWeather />
-      <UpcomingWeather />
+    <View>
+      <View style={styles.container}>
+        <CurrentWeather />
+      </View>
+      <View>
+        <UpcomingWeather />
+      </View>
     </View>
   )
 }
