@@ -7,6 +7,11 @@ const UpcomingWeather = ()=>{
     return(
         <SafeAreaView style={styles.container}>
             <Text>UpcomingWeather</Text>
+            <View>
+                <Text>
+                    Monday
+                </Text>
+            </View>
         </SafeAreaView>
     )
 }
