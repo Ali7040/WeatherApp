@@ -1,17 +1,26 @@
 import React from "react"
-import { Text, View, SafeAreaView, StyleSheet } from 'react-native';
+import { Text, View, SafeAreaView, StyleSheet, FlatList } from 'react-native';
 
+const Data = [
+    {},
+    {},
+    {}
+]
+const item = (props)=>{
+    const { dt_txt, min, max, condition } = props
+    return(
+        <View></View>
+    )
+}
 
 const UpcomingWeather = ()=>{
-
     return(
         <SafeAreaView style={styles.container}>
             <Text style = {styles.title}>UpcomingWeather</Text>
-            <View>
-                <Text>
-                    Monday
-                </Text>
-            </View>
+                <FlatList
+                data ={Data}
+                renderItem ={}
+                />
         </SafeAreaView>
     )
 }
