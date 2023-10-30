@@ -11,9 +11,6 @@ const App = () =>{
       <View style={styles.container}>
         <CurrentWeather />
       </View>
-      <View>
-        <UpcomingWeather />
-      </View>
     </View>
   )
 }
