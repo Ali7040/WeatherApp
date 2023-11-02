@@ -30,6 +30,7 @@ const renderItem = ({item}) =>(
     return(
         <SafeAreaView style={styles.container}>
             <Text >UpcomingWeather</Text>
+            <Image source={require("../../assets/upcoming-background.jpg") styles={styles.Image}} />
                 <FlatList
                 data ={Data}
                 renderItem ={renderItem}
@@ -45,5 +46,8 @@ const styles = StyleSheet.create({
         marginTop: StatusBar.currentHeight || 0,
         backgroundColor: 'royalblue'
     },
+    image: {
+        flex: 1
+      }
 })
 export default UpcomingWeather
