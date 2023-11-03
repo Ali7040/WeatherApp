@@ -1,5 +1,5 @@
 import React from "react"
-import { Text, View, SafeAreaView, StyleSheet, FlatList, StatusBar } from 'react-native';
+import { Text, View, SafeAreaView, StyleSheet, FlatList, StatusBar, ImageBackground } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
 const Data = [
@@ -29,13 +29,17 @@ const renderItem = ({item}) =>(
 )
     return(
         <SafeAreaView style={styles.container}>
+            <ImageBackground
+                style={image}
+                source={require('../../assets/upcoming-background.jpg')}
+            >
             <Text >UpcomingWeather</Text>
-            <Image source={require("../../assets/upcoming-background.jpg") styles={styles.Image}} />
                 <FlatList
                 data ={Data}
                 renderItem ={renderItem}
                 keyExtractor={(item) => item.dt_txt}
                 />
+                 </ImageBackground>
         </SafeAreaView>
     )
 }
