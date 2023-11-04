@@ -39,7 +39,7 @@ const renderItem = ({item}) =>(
                 renderItem ={renderItem}
                 keyExtractor={(item) => item.dt_txt}
                 />
-                 </ImageBackground>
+            </ImageBackground>
         </SafeAreaView>
     )
 }

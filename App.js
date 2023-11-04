@@ -1,17 +1,16 @@
 import React from "react"
-import { StatusBar, Text, View, SafeAreaView, StyleSheet } from 'react-native';
+import { StatusBar, Text, View, SafeAreaView, StyleSheet } from 'react-native'
 import CurrentWeather from "./src/components/CurrentWeather"
-import UpcomingWeather from "./src/components/UpcomingWeather";
+import UpcomingWeather from "./src/components/UpcomingWeather"
+import OurChild from "./src/components/OurChild"
 
 const App = () =>{
 
 
   return(
-    <View>
       <View style={styles.container}>
-        <CurrentWeather />
+        <UpcomingWeather />
       </View>
-    </View>
   )
 }
 
