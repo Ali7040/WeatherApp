@@ -12,11 +12,36 @@ import IconText from '../components/IconText'
 
 
 const City = ()=>{
-
+  const { name, country, population, sunrise, sunset } = weatherData
+  const {
+    container,
+    cityName,
+    cityText,
+    countryName,
+    imageLayout,
+    populationWrapper,
+    populationText,
+    riseSetWrapper,
+    riseSetText,
+    rowLayout
+  } = styles
     return(
         <SafeAreaView>
+          <ImageBackground
+        source={require('../../assets/city-background.jpg')}
+        style={imageLayout}
+      >
              <Text style={[cityName, cityText]}>{name}</Text>
              <Text style={[countryName, cityText]}>{country}</Text>
+             <View style={[populationWrapper, rowLayout]}>
+          <IconText
+            iconName={'user'}
+            iconColor={'red'}
+            bodyText={`Population: ${population}`}
+            bodyTextStyles={populationText}
+          />
+        </View>
+          </ImageBackground>
         </SafeAreaView>
     )
 }
