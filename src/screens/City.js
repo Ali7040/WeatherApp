@@ -34,13 +34,27 @@ const City = ()=>{
              <Text style={[cityName, cityText]}>{name}</Text>
              <Text style={[countryName, cityText]}>{country}</Text>
              <View style={[populationWrapper, rowLayout]}>
-          <IconText
-            iconName={'user'}
-            iconColor={'red'}
-            bodyText={`Population: ${population}`}
-            bodyTextStyles={populationText}
-          />
-        </View>
+              <IconText
+                iconName={'user'}
+                iconColor={'red'}
+                bodyText={`Population: ${population}`}
+                bodyTextStyles={populationText}
+              />
+            </View>
+            <View style={[riseSetWrapper, rowLayout]}>
+              <IconText
+                iconName={'sunrise'}
+                iconColor={'white'}
+                bodyText={moment(sunrise).format('h:mm:ss a')}
+                bodyTextStyles={riseSetText}
+              />
+              <IconText
+                iconName={'sunset'}
+                iconColor={'white'}
+                bodyText={moment(sunset).format('h:mm:ss a')}
+                bodyTextStyles={riseSetText}
+              />
+            </View>
           </ImageBackground>
         </SafeAreaView>
     )
